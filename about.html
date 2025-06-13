@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABOUT – Adv. Shagimon V J</title>
+  <meta name="description" content="Learn about Advocate Shagimon V J – a legal expert specializing in education service laws, consumer rights, and human rights in Kerala." />
+  <link rel="canonical" href="https://adv-shagimonvj.vercel.app/about.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" rel="stylesheet">
+
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="all.min.css">
+  <link rel="icon" href="a.webp">
+
+  <style>
+    body { font-family: 'Roboto Mono', monospace; }
+    .logo-container { position: relative; display: flex; align-items: center; white-space: nowrap; }
+    .logo-container::before { content: 'S V J'; font-size: 80px; color: rgba(0,0,0,0.05); position: absolute; left: 13px; top: -40px; z-index: 0; letter-spacing: 20px; white-space: nowrap; }
+    .logo-text { position: relative; z-index: 1; font-size: 1.5rem; font-weight: bold; border-top: 2px solid black; border-bottom: 2px solid black; padding: 0 10px; letter-spacing: 0.2em; white-space: nowrap; }
+    @media (max-width:768px) {
+      .logo-container::before { font-size: 48px; letter-spacing: 10px; top: -23px; }
+      .logo-text { font-size: 1rem; padding: 0 6px; letter-spacing: 0.1em; }
+    }
+    html {
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+  <header>
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-6">
+      <div class="logo-container"><a href="index.html" class="logo-text">ADV. SHAGIMON V J</a></div>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-2xl focus:outline-none" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <nav class="hidden md:flex space-x-8 text-xs font-semibold tracking-wider">
+        <a href="index.html" class="hover:text-gray-500 block">HOME</a>
+        <a href="about.html" class="hover:text-gray-500 block">ABOUT</a>
+        <a href="FAQ.html" class="hover:text-gray-500 block">FAQ</a>
+      </nav>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden flex-col px-6 pb-4 space-y-2 text-xs font-semibold tracking-wider" style="position:relative; z-index:9999;">
+      <a href="index.html" class="hover:text-gray-500 block">HOME</a>
+      <a href="about.html" class="hover:text-gray-500 block">ABOUT</a>
+      <a href="FAQ.html" class="hover:text-gray-500 block">FAQ</a>
+    </div>
+  </header>
+
+  <section class="bg-white py-10 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-3xl font-bold mb-10 tracking-wide text-center"></h1>
+      <p class="text-lg leading-relaxed text-gray-800 font-light">
+        Shagimon V J is a seasoned educator and legal professional with a unique dual-career background. He earned his LL.B. from Government Law College, Thiruvananthapuram, early in his career, before entering the education sector. He served for several decades as a Higher Secondary School Teacher and later as Principal, gaining deep insight into academic systems and administrative processes.      </p>
+      <br>
+      <p class="text-lg leading-relaxed text-gray-800 font-light">
+        After retiring from government service, he transitioned to full-time legal practice. He is currently associated with P P Aboobacker Associates in Taliparamba. His legal practice focuses on educational service rules, staff-related disputes, and institutional legal consultancy. It also spans consumer rights, human rights, employment rights, and family law. Leveraging his combined experience in education and law, he provides expert legal counsel to individuals and institutions across Kerala.      </p>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      toggle.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+      menu.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { menu.classList.add('hidden'); }); });
+    });
+  </script>
+</body>
+</html>
