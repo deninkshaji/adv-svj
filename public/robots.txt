@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://advshagimonvj.vercel.app/sitemap.xml
